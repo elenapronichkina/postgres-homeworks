@@ -9,8 +9,8 @@ with (psycopg2.connect(host="localhost", database="north", user="postgres", pass
             count = 0
             for row in file_reader:
                 if count == 0:
-                    continue
                     count += 1
+                    continue
                 cur.execute("INSERT INTO employees values (%s, %s, %s, %s, %s, %s)",
                                     (row[0],row[1],row[2],row[3],row[4],row[5]))
 
@@ -25,8 +25,8 @@ with (psycopg2.connect(host="localhost", database="north", user="postgres", pass
             count = 0
             for row in file_reader:
                 if count == 0:
-                    continue
                     count += 1
+                    continue
                 cur.execute("INSERT INTO customers values (%s, %s, %s)",
                                     (row[0],row[1],row[2]))
 
@@ -40,8 +40,8 @@ with (psycopg2.connect(host="localhost", database="north", user="postgres", pass
             count = 0
             for row in file_reader:
                 if count == 0:
-                    continue
                     count += 1
+                    continue
                 cur.execute("INSERT INTO orders values (%s, %s, %s, %s, %s)",
                                     (row[0],row[1],row[2],row[3],row[4]))
 
