@@ -23,3 +23,4 @@ CREATE TABLE orders
 	employee_id int REFERENCES employees (employee_id) NOT NULL,
 	order_date date,
     ship_city varchar(100) NOT NULL
+ );
