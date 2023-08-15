@@ -29,4 +29,4 @@ VALUES
 ('Johny', 'Smith', '1980-04-14', '863-55-42');
 
 -- 7. Удалить все данные из таблицы со сбросом идентификатор в исходное состояние
-TRUNCATE TABLE student
+TRUNCATE TABLE student RESTART IDENTITY
