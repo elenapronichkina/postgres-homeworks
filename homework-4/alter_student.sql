@@ -22,5 +22,11 @@ ALTER TABLE student ALTER COLUMN phone SET DATA TYPE varchar(32);
 
 -- 6. Вставить три любых записи с автогенерацией идентификатора
 
+INSERT INTO student (first_name, last_name, birth_date, phone)
+VALUES
+('John', 'Smith', '1980-04-30', '863-55-44'),
+('Jeyn', 'Smith', '1980-04-04', '863-55-43'),
+('Johny', 'Smith', '1980-04-14', '863-55-42');
 
 -- 7. Удалить все данные из таблицы со сбросом идентификатор в исходное состояние
+TRUNCATE TABLE student
